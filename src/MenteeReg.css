@@ -1,0 +1,81 @@
+.menteereg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 50px 0;
+}
+
+.regdiv {
+  text-align: left !important;
+  width: 70%;
+  background-color: white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  padding: 50px 100px;
+}
+
+.mentorForm {
+  font-family: Arial, sans-serif;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.mentorForm label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.mentorForm input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.checkbox {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border: 2px #ddd solid;
+  margin-right: 20px;
+}
+
+.checktxt {
+  color: black;
+}
+
+label {
+  display: inline-block;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.formtxt {
+  font-family: Arial, sans-serif;
+  color: #04025c;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: fit-content;
+  margin-top: 50px;
+}
+
+label span{
+    position: relative;
+    bottom: 3px;
+}

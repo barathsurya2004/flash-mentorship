@@ -1,0 +1,79 @@
+.mentorHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.mentorHeader h1{
+  display: inline;
+}
+.mentorRight
+{
+display: flex;  
+
+}
+.mentorsContainer{
+  margin-bottom: 100px;
+}
+.mentorRight .dropDown select{
+  padding: 8px 25px;  
+  border: 1px solid;
+  cursor: pointer;
+
+}
+.mentorRight .mentorButton button{
+  padding: 8px 25px;  
+  border: 1px solid;
+  cursor: pointer;
+}
+.mentorRight div{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.mentorGrid{
+  padding: 0 100px;
+  display: grid;
+  column-gap:75px;
+  row-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.grid{
+  box-shadow: -2px 0px 42px 0px rgba(0,0,0,0.1),2px 0px 15px -3px rgba(0,0,0,0.1);
+  height: 480px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.grid img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.grid button{
+  width: 50%;
+  padding: 8px 0;
+  background-color: white;
+  border: 2px solid ;
+  color:rgb(255, 74, 74) ;
+  cursor: pointer;
+  border-color: rgb(255, 74, 74);
+}
+@media (max-width:1000px){
+  .mentorGrid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width:720px){
+  .mentorGrid{
+    grid-template-columns: 1fr;
+  }
+  .mentorHeader{
+    flex-direction: column;
+  }
+}
