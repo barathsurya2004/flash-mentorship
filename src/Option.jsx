@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Option.css";
 import img1 from "./assets/mentee.png";
 import img2 from "./assets/mentor.png";
-
+import { useNavigate } from "react-router-dom";
+import { UserContext } from "./context";
 function Option() {
+  const navigate = useNavigate();
+  const { logStatus } = useContext(UserContext);
   return (
     <div className="option">
       <p className="how">Choose Your Option</p>
@@ -15,23 +18,54 @@ function Option() {
               <div className="smpara">
                 Students | Young Alumni | Working Professionals
               </div>
-              <div className="optbtn">Get Started</div>
+              <div
+                className="optbtn"
+                onClick={() => {
+                  if (logStatus) {
+                    navigate("/become-a-mentee");
+                  } else {
+                    navigate("/login");
+                  }
+                }}
+              >
+                Get Started
+              </div>
             </div>
           </div>
           <div className="item1">
             <div class="module">
               <div className="head3">“I'm ready to become a mentor”</div>
               <div className="smpara">Any alumnus who wants to help</div>
-              <div className="optbtn">Get Started</div>
+              <div
+                className="optbtn"
+                onClick={() => {
+                  if (logStatus) {
+                    navigate("/become-a-mentor");
+                  } else {
+                    navigate("/login");
+                  }
+                }}
+              >
+                Get Started
+              </div>
             </div>
           </div>
           <div className="item1">
             <div class="module">
               <div className="head3">“I'm am not sure right now”</div>
-              <div className="smpara">
-                Help us to improve our mentorship program{" "}
+              <div className="smpara">Get Help From The mentors </div>
+              <div
+                className="optbtn"
+                onClick={() => {
+                  if (logStatus) {
+                    navigate("/mentors");
+                  } else {
+                    navigate("/login");
+                  }
+                }}
+              >
+                Get Started
               </div>
-              <div className="optbtn">Get Started</div>
             </div>
           </div>
         </div>
